@@ -4,8 +4,42 @@ html, body {
 body {
     margin: 20px;
     background-color: rgb(228, 228, 228);
+    height: 2000px;
 }
 input[type="number"]{
     width: 80px;
 }
 
+#field {
+    position: relative;
+    width: 250px;
+    height: 134px;
+    border: 10px solid black;
+    background-color: #00FF00;
+    overflow: hidden;
+}
+#ball {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* animation: rotate-ball .75s; */
+    transition: .9s;
+}
+@keyframes rotate-ball {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: ease-in;
+    }
+    30% {
+        transform: rotate(90deg);
+        animation-timing-function: linear;
+    }
+    75% {
+        transform: rotate(280deg);
+        animation-timing-function: linear;
+    }
+    100% {
+        transform: rotate(360deg);
+        animation-timing-function: linear;
+    }
+}
