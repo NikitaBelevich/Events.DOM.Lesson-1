@@ -60,3 +60,17 @@ function getCoordinatesElement(elem) {
     return elem.getBoundingClientRect();
 };
 // TODO Task 2
+
+// TODO Task 3
+const menu3 = document.querySelector('.task3 .menu');
+const menuTitle = menu3.firstElementChild;
+const menuList = menu3.lastElementChild;
+const iconTitle = menuTitle.firstElementChild;
+
+menuTitle.addEventListener('click', function() {
+    menuList.style.opacity = 0;
+    iconTitle.classList.toggle('icon-circle-right_rotation');
+    menuList.classList.toggle('menu__list-show');
+    setTimeout(() => {menuList.style.opacity = 1;}); // после выполнения основного кода
+});
+// TODO Task 3

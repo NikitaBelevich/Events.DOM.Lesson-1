@@ -1,3 +1,4 @@
+@import url('/icomoon/style.css');
 html, body {
     font-family: serif;
 }
@@ -42,4 +43,33 @@ input[type="number"]{
         transform: rotate(360deg);
         animation-timing-function: linear;
     }
+}
+
+.menu__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.icon-circle-right {
+    display: inline-block;
+    margin-right: 8px;
+    transition: .15s ease-out;
+    transform: translateY(2px);
+}
+.icon-circle-right_rotation {
+    transform: translateY(2px) rotate(90deg);
+    text-shadow: 1px 0px 2px #da0ef0;
+}
+.menu__title > .icon-circle-right:before {
+    color: #da0ef0;
+    font-size: 19px;
+}
+.menu__list {
+    display: none;
+    opacity: 0;
+    margin-top: 5px;
+    font-size: 1.2rem;
+    transition: .35s;
+}
+.menu__list-show {
+    display: block;
 }
