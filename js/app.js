@@ -74,3 +74,15 @@ menuTitle.addEventListener('click', function() {
     setTimeout(() => {menuList.style.opacity = 1;}); // после выполнения основного кода
 });
 // TODO Task 3
+
+// TODO Task 4
+const messages = document.querySelectorAll('.task4 .messages__message');
+messages.forEach((message) => {
+    const buttonClose = message.lastElementChild;
+    buttonClose.addEventListener('click', () => {
+        message.classList.add('messages__message-hide'); // анимация скрытия
+        setTimeout(() => {message.hidden = true;}, 280); // скрытие из потока
+    });
+});
+// TODO Task 4
+
