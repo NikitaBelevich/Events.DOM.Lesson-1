@@ -107,3 +107,11 @@ rightArrow.addEventListener('click', () => {
     carouselList.style.transform = `translateX(${positionSlider}px)`;
 });
 // TODO Task 5
+
+// TODO Task 6
+let div6 = document.querySelector('.task6');
+div6.addEventListener('mousemove', (e) => {
+    div6.textContent = `X: ${e.offsetX + div6.clientLeft}  Y: ${e.offsetY + div6.clientTop}`;
+});
+// TODO Task 6
+
