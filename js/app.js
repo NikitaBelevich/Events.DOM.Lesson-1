@@ -115,3 +115,10 @@ div6.addEventListener('mousemove', (e) => {
 });
 // TODO Task 6
 
+// TODO Task 7
+let div7 = document.querySelector('.task7');
+div7.addEventListener('click', (event) => {
+    let square = div7.firstElementChild;
+    square.style.cssText = `left: ${event.layerX}px; top: ${event.layerY}px`;
+});
+// TODO Task 7
