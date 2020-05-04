@@ -1,4 +1,4 @@
-@import url('/icomoon/style.css');
+@import url('../icomoon/style.css');
 html, body {
     font-family: serif;
 }
@@ -110,3 +110,47 @@ input[type="number"]{
 .messages__close:hover{
     text-shadow: 0 0 2px rgb(161, 20, 55);
 }
+
+
+.slider {
+    position: relative;
+    width: 398px;
+    padding: 10px 40px;
+    border: 1px solid gray;
+    background-color: #beeac0;
+    border-radius: 5px;
+}
+
+.slider__left-button,
+.slider__right-button {
+    position: absolute;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+.slider__left-button:hover,
+.slider__right-button:hover {
+    text-shadow: 0 0 3px black;
+}
+.slider__left-button {
+    left: 10px;
+    top: 42%;
+}
+.slider__right-button {
+    right: 10px;
+    top: 42%;
+}
+.slider__gallery {
+    width: 390px;
+    overflow: hidden;
+}
+.slider__spread {
+    width: 5000px;
+    transition: .3s ease-in-out;
+}
+.slider__slide {
+    display: inline-block;
+    float: left;
+}
+

@@ -86,3 +86,24 @@ messages.forEach((message) => {
 });
 // TODO Task 4
 
+// TODO Task 5
+const leftArrow = document.querySelector('.slider > .slider__left-button');
+const rightArrow = document.querySelector('.slider > .slider__right-button');
+const carouselList = document.querySelector('.slider .slider__spread');
+const imgSlides = carouselList.children;
+const widthSlide = 130;
+const countSlide = 3;
+let positionSlider = 0;
+
+leftArrow.addEventListener('click', () => {
+    positionSlider += widthSlide * countSlide;
+    positionSlider = Math.min(positionSlider, 0)
+    carouselList.style.transform = `translateX(${positionSlider}px)`;
+});
+
+rightArrow.addEventListener('click', () => {
+    positionSlider -= widthSlide * countSlide;
+    positionSlider = Math.max(positionSlider, -widthSlide * (imgSlides.length - countSlide));
+    carouselList.style.transform = `translateX(${positionSlider}px)`;
+});
+// TODO Task 5
