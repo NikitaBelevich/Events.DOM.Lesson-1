@@ -122,3 +122,14 @@ div7.addEventListener('click', (event) => {
     square.style.cssText = `left: ${event.layerX}px; top: ${event.layerY}px`;
 });
 // TODO Task 7
+
+// TODO Task 8
+let div8 = document.querySelector('.task8');
+div8.addEventListener('click', (event) => {
+    let square = div8.firstElementChild;
+    const squareWidth = square.offsetWidth;
+    const squareHeight = square.offsetHeight;
+    // console.log(event);
+    square.style.cssText = `left: ${event.offsetX - (squareWidth / 2)}px; top: ${event.offsetY - (squareHeight / 2)}px`;
+});
+// TODO Task 8
