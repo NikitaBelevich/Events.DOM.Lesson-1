@@ -159,3 +159,18 @@ button10.addEventListener('click', (event) => {
 });
 
 // TODO Task 10
+
+// TODO Task 11
+const button11 = document.querySelector('.task11 button');
+button11.addEventListener('click', function(event) {
+    if (event.ctrlKey) {
+        this.textContent = 1;
+    }
+    if (event.altKey) {
+        this.textContent = 2;
+    }
+    if (event.shiftKey) {
+        this.textContent = 3;
+    }
+});
+// TODO Task 11
