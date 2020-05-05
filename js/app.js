@@ -119,7 +119,7 @@ div6.addEventListener('mousemove', (e) => {
 let div7 = document.querySelector('.task7');
 div7.addEventListener('click', (event) => {
     let square = div7.firstElementChild;
-    square.style.cssText = `left: ${event.layerX}px; top: ${event.layerY}px`;
+    square.style.cssText = `left: ${event.offsetX}px; top: ${event.offsetY}px`;
 });
 // TODO Task 7
 
