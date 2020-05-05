@@ -133,3 +133,16 @@ div8.addEventListener('click', (event) => {
     square.style.cssText = `left: ${event.offsetX - (squareWidth / 2)}px; top: ${event.offsetY - (squareHeight / 2)}px`;
 });
 // TODO Task 8
+
+// TODO Task 9
+const inp9 = document.querySelector('.task9 input');
+const outKeyCode = document.querySelector('.task9 span:first-of-type');
+const outKey = document.querySelector('.task9 span:last-of-type');
+inp9.addEventListener('keyup', (event) => {
+    const keyCode = event.keyCode;
+    const key = event.key;
+    outKeyCode.textContent = `Код нажатой клавиши: ${keyCode}`;
+    outKey.textContent = `Клавиша: ${key}`;
+});
+
+// TODO Task 9
