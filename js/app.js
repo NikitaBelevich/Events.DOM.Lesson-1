@@ -174,3 +174,16 @@ button11.addEventListener('click', function(event) {
     }
 });
 // TODO Task 11
+
+// TODO Task 12
+// Дан инпут. В него вводится текст и нажимается клавиша Enter (ее код имеет номер 13). Сделайте так, чтобы по нажатию Enter введенный текст попадал в абзац под инпутом, а содержимое инпута очищалось.
+const inp12 = document.querySelector('.task12 input');
+const out12 = document.querySelector('.task12 p');
+inp12.addEventListener('keyup', function(event) {
+    if (event.code == 'Enter') {
+        let value = this.value.trim();
+        out12.textContent += value;
+        this.value = '';
+    }
+});
+// TODO Task 12
