@@ -146,3 +146,16 @@ inp9.addEventListener('keyup', (event) => {
 });
 
 // TODO Task 9
+
+// TODO Task 10
+const button10 = document.querySelector('.task10 button');
+button10.addEventListener('click', (event) => {
+
+    if (event.ctrlKey) {
+        button10.style.backgroundColor = 'red';
+    }
+    
+    console.log(event);
+});
+
+// TODO Task 10
